@@ -58,6 +58,18 @@
 																
 								%>" />
 						</div>
+                                                <div class="form-group">
+							<label for="calcular">Resultado de la operación:</label> <input type="text"
+								class="form-control" id="resultado" disabled name="resultado"
+								value="<% //Recuperar la variable de sesion
+									if(request.getSession().getAttribute("resultado") == null){
+										out.println("");
+									}else{
+										out.println(request.getSession().getAttribute("resultado"));	
+									}
+																
+								%>" />
+						</div>
 					</form>
 				</div>
 			</div>
