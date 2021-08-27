@@ -18,7 +18,7 @@ public class CalculadoraServlet extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CalculadoraServlet() {
+    public CalculadoraServlet()tg {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -45,7 +45,7 @@ public class CalculadoraServlet extends HttpServlet {
 		switch (op) {
 		case 1:
 			resultado = "" + (n1+n2);
-                default:
+                default: //otro error
 			break;
 		case 2:
 			resultado = "" + (n1-n2);
